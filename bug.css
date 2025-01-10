@@ -1,0 +1,10 @@
+The following CSS code causes an unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code snippet intends to make two divs occupy half of the screen width each, but in some cases it doesn't work as expected. One of the common problems is that if the total width of the two divs plus their margins and padding exceeds the parent container's width, the layout can break and the divs may overflow or wrap to the next line. Another problem that can occur is that if the parent container doesn't have a specified width, the divs might not occupy exactly 50% of the viewport width, and instead their width will depend on the content and the browser's default styling.
