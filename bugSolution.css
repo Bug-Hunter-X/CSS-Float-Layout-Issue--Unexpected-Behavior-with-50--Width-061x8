@@ -1,0 +1,14 @@
+Here is a solution using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.parent {
+  display: flex;
+}
+```
+
+This solution uses flexbox which is more reliable for managing layouts and doesn't have the same issues associated with the `float` property. With `box-sizing: border-box` the padding and border of the element are included in the 50% calculation.
